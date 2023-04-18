@@ -5,6 +5,7 @@
 #include <string.h>
 #include <ti/real.h>
 #include <ti/vars.h>
+#include <ti/getkey.h>
 /* Main function, called first */
 int main(void)
 {
@@ -28,7 +29,7 @@ int main(void)
     os_PutStrFull("this is the matrix val 1,1 ");
     os_PutStrFull(matrx_str);
 
-    int test_array [5] = { 16, 2, 77, 40, 12071 };
+    int test_array [5] = { 16, 2, 12, 40, 12071 };
     integer_val = os_Int24ToReal(test_array[2]);
     os_RealToStr(array_int_str, &integer_val, 8, 1, 1);
 
@@ -39,6 +40,8 @@ int main(void)
 
     // set a matrix value
     os_SetMatrixElement(OS_VAR_MAT_B,1,1,&integer_val); // how to set a matrix value
+
+    k_RRef;
 
     while (!os_GetCSC());
 

@@ -5,7 +5,7 @@
 		<Option title="DEMO" />
 		<Option makefile="makefile" />
 		<Option makefile_is_custom="1" />
-		<Option execution_dir="C:/CEdev/template/DEMO" />
+		<Option execution_dir="." />
 		<Option pch_mode="2" />
 		<Option compiler="cedev_toolchain" />
 		<Build>
@@ -17,6 +17,9 @@
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
+				<ExtraCommands>
+					<Add after="cmd /c C:\CEdev\CEmu\CEmu -s bin\$(PROJECT_NAME).8xp --launch $(PROJECT_NAME)" />
+				</ExtraCommands>
 				<MakeCommands>
 					<Build command="$make -f $makefile PARAM=$(PROJECT_NAME)" />
 					<CompileFile command="$make -f $makefile $file" />
@@ -50,9 +53,6 @@
 		<Compiler>
 			<Add option="-Weverything" />
 		</Compiler>
-		<ExtraCommands>
-			<Add after="zip -j9 zip\$(PROJECT_NAME)_$(TODAY).zip src\*.c src\*.h bin\*.8xp" />
-		</ExtraCommands>
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
