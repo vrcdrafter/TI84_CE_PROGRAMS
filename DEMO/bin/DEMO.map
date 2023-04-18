@@ -1,0 +1,220 @@
+Section                Base   Top    High   Length
+---------------------- ------ ------ ------ -------
+.comment               000000 002A3F          2A3Fh
+.debug_abbrev          000000 000121           121h
+.debug_addr            000000 00004D            4Dh
+.debug_aranges         000000 000000             0h
+.debug_frame           000000 000034            34h
+.debug_info            000000 0002D3           2D3h
+.debug_line            000000 0001AC           1ACh
+.debug_line_str        000000 000000             0h
+.debug_loc             000000 000000             0h
+.debug_loclists        000000 000046            46h
+.debug_macinfo         000000 000000             0h
+.debug_macro           000000 000000             0h
+.debug_names           000000 000000             0h
+.debug_pubnames        000000 000000             0h
+.debug_pubtypes        000000 000000             0h
+.debug_ranges          000000 000000             0h
+.debug_rnglists        000000 000000             0h
+.debug_str             000000 0001F3           1F3h
+.debug_str_offsets     000000 00009C            9Ch
+.debug_sup             000000 000000             0h
+.debug_types           000000 000000             0h
+.debug_abbrev.dwo      000000 000000             0h
+.debug_info.dwo        000000 000000             0h
+.debug_line.dwo        000000 000000             0h
+.debug_loclists.dwo    000000 000000             0h
+.debug_macro.dwo       000000 000000             0h
+.debug_rnglists.dwo    000000 000000             0h
+.debug_str.dwo         000000 000000             0h
+.debug_str_offsets.dwo 000000 000000             0h
+.debug_cu_index        000000 000000             0h
+.debug_tu_index        000000 000000             0h
+.icon                  D1A882 D1A89B            19h
+.init.libs             D1A89B D1A89B             0h
+.libs                  D1A89B D1A89B             0h
+.init.clock            D1A89B D1A89B             0h
+.init.reruncheck       D1A89B D1A89B             0h
+.init                  D1A89B D1A8BB            20h
+.fini                  D1A8BB D1A8EF            34h
+.text                  D1A8EF D1C7DB          1EECh
+.data                  D1C7DB D1C7DB             0h
+.rodata                D1C7DB D1C94A           16Fh
+.init_array            000000 000000             0h
+.ctors                 000000 000000             0h
+.dtors                 000000 000000             0h
+.fini_array            000000 000000             0h
+.bss                   D052C6 D052C6 D13FD8      0h
+.header                D1A87F D1A882             3h
+
+Label                       Value
+-------------------------   ------
+___low_bss                = D052C6
+___len_bss                = 000000
+___heaptop                = D13FD8
+___heapbot                = D052C6
+___libs                   = D1A89B
+___init_array_count       = 000000
+___ctors_count            = 000000
+___dtors_count            = 000000
+___fini_array_count       = 000000
+__stack                   = D1A87E
+__frameset                = D1A8EF
+__frameset0               = D1A8FD
+__iand                    = D1A908
+__imulu                   = D1A921
+__indcallhl               = D1A951
+__ineg                    = D1A952
+__ior                     = D1A95B
+__ishl                    = D1A974
+__ishru                   = D1A99A
+__ixor                    = D1A9DB
+__ladd                    = D1A9F4
+__land                    = D1A9FA
+__lcmpu                   = D1AA15
+__lcmpzero                = D1AA1D
+__lladd                   = D1AA25
+__lland                   = D1AA49
+__llcmpu                  = D1AA86
+__llcmpzero               = D1AAB0
+__llctlz                  = D1AAC5
+__lldivs                  = D1AADD
+__lldivu                  = D1AB2D
+__lldvrmu                 = D1AB41
+__lldvrmu.hijack          = D1AB48
+__llmulu                  = D1AB9F
+__llneg                   = D1ABF4
+__llshl                   = D1AC0D
+__llshrs.hijack_llshru    = D1AC3B
+__llshrs.finish           = D1AC5A
+__llshru                  = D1AC5E
+__llsub                   = D1AC78
+__lshrs.hijack_lshru      = D1ACA6
+__lshru                   = D1ACB5
+__fcmp                    = 000274
+__ftol                    = 00027C
+__ftoul                   = 00027C
+__ltof                    = 000284
+__setflag                 = 000218
+__ultof                   = 000280
+_os_DisableHomeTextBuffer = D1ACC5
+_os_EnableHomeTextBuffer  = D1ACD7
+_os_ClrLCD                = 02080C
+_os_HomeUp                = 020828
+_os_DrawStatusBar         = 021A3C
+_os_RealToStr             = 021CB4
+_os_PutStrFull            = 021D2C
+_os_GetCSC                = 021D3C
+_os_Int24ToReal           = 021EF8
+_os_GetMatrixElement      = 021FC8
+_os_SetMatrixElement      = 021FDC
+_npf_vpprintf             = D1ACE9
+JTI0_0                    = D1C7DB
+JTI0_1                    = D1C7F9
+JTI0_2                    = D1C83E
+JTI0_3                    = D1C85F
+JTI0_4                    = D1C877
+JTI0_5                    = D1C88F
+_npf_utoa_rev             = D1C453
+__printf_c                = D1C51B
+__vsnprintf_c             = D1C53A
+_npf_bufputc              = D1C59D
+_npf_bufputc_nop          = D1C5C2
+__snprintf_c              = D1C5C9
+__vsprintf_c              = D1C5F1
+__vprintf_c               = D1C60F
+_npf_putc_std             = D1C62F
+__sprintf_c               = D1C63F
+_.str                     = D1C8A7
+_.str.1                   = D1C8AB
+_.str.2                   = D1C8AF
+_outchar                  = D1C668
+_sprintf                  = D1C63F
+_vprintf                  = D1C60F
+_vsnprintf                = D1C53A
+__start                   = D1A89B
+___exithl                 = D1A8BB
+skip._exit                = D1A8BB
+skip.__Exit               = D1A8BB
+skip._abort               = D1A8BB
+_exit.sp                  = D1A8BC
+_exit.flash_wait_states   = D1A8C6
+_main                     = D1C67E
+func_begin0               = D1C67E
+tmp2                      = D1C6AD
+tmp3                      = D1C6B1
+tmp4                      = D1C6B5
+tmp5                      = D1C6C8
+tmp6                      = D1C6F0
+tmp7                      = D1C6FE
+tmp8                      = D1C707
+tmp9                      = D1C708
+tmp10                     = D1C71A
+tmp11                     = D1C733
+tmp12                     = D1C741
+tmp13                     = D1C74A
+tmp14                     = D1C75E
+tmp16                     = D1C766
+tmp17                     = D1C76B
+func_end0                 = D1C7DB
+_.str                     = D1C8B3
+_.str.1                   = D1C8C0
+_.str.2                   = D1C8C4
+_.str.3                   = D1C8E0
+_.str.4                   = D1C8FB
+_.str.5                   = D1C8FF
+_.str.6                   = D1C909
+_.str.7                   = D1C918
+_.str.8                   = D1C935
+debug_list_header_start0  = 000004
+loclists_table_base0      = 00000C
+debug_loc0                = 00001C
+debug_loc1                = 000025
+debug_loc2                = 000033
+debug_loc3                = 00003D
+debug_list_header_end0    = 000046
+abbrev_start0             = 000000
+debug_info_start0         = 000004
+debug_info_end0           = 0002D3
+str_offsets_base0         = 000008
+info_string0              = 000000
+info_string1              = 000069
+info_string2              = 000074
+info_string3              = 00008B
+info_string4              = 000090
+info_string5              = 0000A4
+info_string6              = 0000AE
+info_string7              = 0000B8
+info_string8              = 0000C9
+info_string9              = 0000DD
+info_string10             = 0000E1
+info_string11             = 0000E6
+info_string12             = 0000F2
+info_string13             = 0000F9
+info_string14             = 0000FD
+info_string15             = 000102
+info_string16             = 000110
+info_string17             = 000118
+info_string18             = 00011F
+info_string19             = 00012C
+info_string20             = 00013A
+info_string21             = 000147
+info_string22             = 000150
+info_string23             = 00015F
+info_string24             = 000167
+info_string25             = 00017B
+info_string26             = 000185
+info_string27             = 00018A
+info_string28             = 000197
+info_string29             = 0001A3
+info_string30             = 0001AD
+info_string31             = 0001BB
+info_string32             = 0001CD
+info_string33             = 0001D3
+info_string34             = 0001DE
+info_string35             = 0001E2
+info_string36             = 0001E7
+debug_addr_start0         = 000004
+addr_table_base0          = 000008
+debug_addr_end0           = 00004D

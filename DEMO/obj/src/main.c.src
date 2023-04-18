@@ -1,0 +1,1311 @@
+	section	.text,"ax",@progbits
+	assume	adl = 1
+	file	0 "C:\CEdev\template\DEMO" "src\main.c" md5 0x4865609de9ac5ea913c45d5d67bb39a6
+	file	1 "src" "main.c" md5 0x4865609de9ac5ea913c45d5d67bb39a6
+	section	.text,"ax",@progbits
+	public	_main
+_main:
+	private	func_begin0
+func_begin0:
+	loc	1 10 0
+	cfi_sections .debug_frame
+	cfi_startproc
+	ld	hl, -60
+	call	__frameset
+	private	tmp0
+tmp0:
+	cfi_def_cfa ix, 6
+	cfi_offset ix, -6
+	lea	hl, ix - 9
+	ld	(ix - 57), hl
+	lea	hl, ix - 18
+	ld	(ix - 48), hl
+	lea	hl, ix - 28
+	ld	(ix - 54), hl
+	lea	hl, ix - 36
+	ld	(ix - 51), hl
+	lea	hl, ix - 45
+	private	tmp1
+tmp1:
+	loc	1 12 5 prologue_end
+	ld	(ix - 60), hl
+	ld	iy, -3145600
+	call	_os_ClrLCD
+	private	tmp2
+tmp2:
+	call	_os_HomeUp
+	private	tmp3
+tmp3:
+	call	_os_DrawStatusBar
+	private	tmp4
+tmp4:
+	loc	1 23 5
+	ld	hl, (ix - 57)
+	push	hl
+	ld	hl, 1
+	push	hl
+	push	hl
+	ld	hl, _.str.1
+	push	hl
+	call	_os_GetMatrixElement
+	private	tmp5
+tmp5:
+	pop	hl
+	pop	hl
+	pop	hl
+	pop	hl
+	ld	iy, (ix - 60)
+	loc	1 24 32
+	lea	de, iy
+	ld	hl, (ix - 57)
+	ld	bc, 9
+	ldir
+	ld	hl, 1
+	loc	1 26 5
+	push	hl
+	push	hl
+	ld	hl, 8
+	push	hl
+	push	iy
+	ld	hl, (ix - 54)
+	push	hl
+	call	_os_RealToStr
+	private	tmp6
+tmp6:
+	pop	hl
+	pop	hl
+	pop	hl
+	pop	hl
+	pop	hl
+	loc	1 28 5
+	ld	hl, _.str.2
+	push	hl
+	call	_os_PutStrFull
+	private	tmp7
+tmp7:
+	pop	hl
+	loc	1 29 5
+	ld	hl, (ix - 54)
+	push	hl
+	call	_os_PutStrFull
+	private	tmp8
+tmp8:
+	pop	hl
+	private	tmp9
+tmp9:
+	loc	1 32 19
+	ld	hl, 77
+	push	hl
+	ld	hl, (ix - 48)
+	push	hl
+	ld	iy, -3145600
+	call	_os_Int24ToReal
+	private	tmp10
+tmp10:
+	pop	hl
+	pop	hl
+	ld	hl, 1
+	loc	1 33 5
+	push	hl
+	push	hl
+	ld	hl, 8
+	push	hl
+	ld	hl, (ix - 48)
+	push	hl
+	ld	hl, (ix - 51)
+	push	hl
+	call	_os_RealToStr
+	private	tmp11
+tmp11:
+	pop	hl
+	pop	hl
+	pop	hl
+	pop	hl
+	pop	hl
+	loc	1 35 5
+	ld	hl, _.str.3
+	push	hl
+	call	_os_PutStrFull
+	private	tmp12
+tmp12:
+	pop	hl
+	loc	1 36 5
+	ld	hl, (ix - 51)
+	push	hl
+	call	_os_PutStrFull
+	private	tmp13
+tmp13:
+	pop	hl
+	loc	1 41 5
+	ld	hl, (ix - 48)
+	push	hl
+	ld	hl, 1
+	push	hl
+	push	hl
+	ld	hl, _.str.4
+	push	hl
+	call	_os_SetMatrixElement
+	private	tmp14
+tmp14:
+	pop	hl
+	pop	hl
+	pop	hl
+	pop	hl
+	private	tmp15
+tmp15:
+BB0_1:
+	loc	1 43 13
+	call	_os_GetCSC
+	private	tmp16
+tmp16:
+	loc	1 43 5 is_stmt 0
+	or	a, a
+	jp	z, BB0_1
+	private	tmp17
+tmp17:
+	loc	1 50 9 is_stmt 1
+	ld	hl, _.str.5
+	push	hl
+	ld	hl, -327680
+	push	hl
+	call	_sprintf
+	private	tmp18
+tmp18:
+	pop	hl
+	pop	hl
+	loc	1 51 9
+	ld	hl, _.str
+	push	hl
+	ld	hl, _.str.6
+	push	hl
+	ld	hl, -327680
+	push	hl
+	call	_sprintf
+	private	tmp19
+tmp19:
+	pop	hl
+	pop	hl
+	pop	hl
+	ld	hl, 4
+	loc	1 52 9
+	push	hl
+	ld	hl, _.str.7
+	push	hl
+	ld	hl, -327680
+	push	hl
+	call	_sprintf
+	private	tmp20
+tmp20:
+	pop	hl
+	pop	hl
+	pop	hl
+	loc	1 53 9
+	ld	hl, 4
+	push	hl
+	ld	hl, _.str.7
+	push	hl
+	ld	hl, -327680
+	push	hl
+	call	_sprintf
+	private	tmp21
+tmp21:
+	pop	hl
+	pop	hl
+	pop	hl
+	loc	1 54 9
+	ld	hl, 77
+	push	hl
+	ld	hl, _.str.8
+	push	hl
+	ld	hl, -327680
+	push	hl
+	call	_sprintf
+	private	tmp22
+tmp22:
+	pop	hl
+	pop	hl
+	pop	hl
+	loc	1 56 5
+	or	a, a
+	sbc	hl, hl
+	ld	sp, ix
+	pop	ix
+	cfi_def_cfa sp, 3
+	cfi_restore ix
+	ret
+	private	tmp23
+tmp23:
+	section	.text,"ax",@progbits
+	private	func_end0
+func_end0:
+	cfi_endproc
+	file	2 "C:\CEdev" "include\ti\screen.h" md5 0x8a101552ac4bb6e50be12ac13b003683
+	file	3 "C:\CEdev" "include\ti\ui.h" md5 0x2d1ac57146fe5cbfea50a709291f0370
+	file	4 "C:\CEdev" "include\ti\vars.h" md5 0xe94956e05ffe750c64a6948a99b78e36
+	file	5 "C:\CEdev" "include\stdint.h" md5 0x6e1e418db59a513b9b4298147e26150f
+	file	6 "C:\CEdev" "include\ti\real.h" md5 0xd1d4f3c399d94bffac2ac4d87951708e
+	file	7 "C:\CEdev" "include\ti\getcsc.h" md5 0x97411d0b1dbbb884a44c3a5dfd5ef73e
+
+	section	.rodata,"a",@progbits
+	private	_.str
+_.str:
+	db	"OS_VAR_MAT_A", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.1
+_.str.1:
+	db	"\", 0, 0, 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.2
+_.str.2:
+	db	"this is the matrix val 1,1 ", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.3
+_.str.3:
+	db	"this is the array val [1] ", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.4
+_.str.4:
+	db	"\", 0, 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.5
+_.str.5:
+	db	"Hi Jenny", 10, 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.6
+_.str.6:
+	db	"var value: %d", 10, 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.7
+_.str.7:
+	db	"PROGRAM ABORTED (code = %u)", 10, 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.8
+_.str.8:
+	db	"this is my array %d", 10, 0
+
+	section	.debug_loclists,"",@progbits
+	dd	debug_list_header_end0-debug_list_header_start0
+	private	debug_list_header_start0
+debug_list_header_start0:
+	dw	5
+	db	3
+	db	0
+	dd	4
+	private	loclists_table_base0
+loclists_table_base0:
+	dd	debug_loc0-loclists_table_base0
+	dd	debug_loc1-loclists_table_base0
+	dd	debug_loc2-loclists_table_base0
+	dd	debug_loc3-loclists_table_base0
+	private	debug_loc0
+debug_loc0:
+	db	4
+	uleb128	tmp4-func_begin0
+	uleb128	func_end0-func_begin0
+	db	3
+	db	17
+	db	10
+	db	159
+	db	0
+	private	debug_loc1
+debug_loc1:
+	db	4
+	uleb128	tmp9-func_begin0
+	uleb128	func_end0-func_begin0
+	db	7
+	db	147
+	db	6
+	db	16
+	db	77
+	db	159
+	db	147
+	db	3
+	db	0
+	private	debug_loc2
+debug_loc2:
+	db	4
+	uleb128	tmp17-func_begin0
+	uleb128	func_end0-func_begin0
+	db	3
+	db	17
+	db	10
+	db	159
+	db	0
+	private	debug_loc3
+debug_loc3:
+	db	4
+	uleb128	tmp17-func_begin0
+	uleb128	func_end0-func_begin0
+	db	2
+	db	52
+	db	159
+	db	0
+	private	debug_list_header_end0
+debug_list_header_end0:
+	section	.debug_abbrev,"",@progbits
+	private	abbrev_start0
+abbrev_start0:
+	db	1
+	db	17
+	db	1
+	db	37
+	db	37
+	db	19
+	db	5
+	db	3
+	db	37
+	db	114
+	db	23
+	db	16
+	db	23
+	db	27
+	db	37
+	db	17
+	db	27
+	db	18
+	db	6
+	db	115
+	db	23
+	db	"Œ"
+	db	23
+	db	0
+	db	0
+	db	2
+	db	52
+	db	0
+	db	73
+	db	19
+	db	58
+	db	11
+	db	59
+	db	11
+	db	2
+	db	24
+	db	0
+	db	0
+	db	3
+	db	1
+	db	1
+	db	73
+	db	19
+	db	0
+	db	0
+	db	4
+	db	33
+	db	0
+	db	73
+	db	19
+	db	55
+	db	11
+	db	0
+	db	0
+	db	5
+	db	36
+	db	0
+	db	3
+	db	37
+	db	62
+	db	11
+	db	11
+	db	11
+	db	0
+	db	0
+	db	6
+	db	36
+	db	0
+	db	3
+	db	37
+	db	11
+	db	11
+	db	62
+	db	11
+	db	0
+	db	0
+	db	7
+	db	15
+	db	0
+	db	73
+	db	19
+	db	0
+	db	0
+	db	8
+	db	46
+	db	1
+	db	17
+	db	27
+	db	18
+	db	6
+	db	64
+	db	24
+	db	122
+	db	25
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	39
+	db	25
+	db	73
+	db	19
+	db	63
+	db	25
+	db	0
+	db	0
+	db	9
+	db	52
+	db	0
+	db	2
+	db	24
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	73
+	db	19
+	db	0
+	db	0
+	db	10
+	db	52
+	db	0
+	db	2
+	db	34
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	73
+	db	19
+	db	0
+	db	0
+	db	11
+	db	52
+	db	0
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	73
+	db	19
+	db	0
+	db	0
+	db	12
+	db	72
+	db	0
+	db	127
+	db	19
+	db	125
+	db	27
+	db	0
+	db	0
+	db	13
+	db	46
+	db	0
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	39
+	db	25
+	db	60
+	db	25
+	db	63
+	db	25
+	db	0
+	db	0
+	db	14
+	db	46
+	db	1
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	5
+	db	39
+	db	25
+	db	73
+	db	19
+	db	60
+	db	25
+	db	63
+	db	25
+	db	0
+	db	0
+	db	15
+	db	5
+	db	0
+	db	73
+	db	19
+	db	0
+	db	0
+	db	16
+	db	38
+	db	0
+	db	73
+	db	19
+	db	0
+	db	0
+	db	17
+	db	22
+	db	0
+	db	73
+	db	19
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	0
+	db	0
+	db	18
+	db	19
+	db	1
+	db	11
+	db	11
+	db	58
+	db	11
+	db	59
+	db	11
+	db	0
+	db	0
+	db	19
+	db	13
+	db	0
+	db	3
+	db	37
+	db	73
+	db	19
+	db	58
+	db	11
+	db	59
+	db	11
+	db	56
+	db	11
+	db	0
+	db	0
+	db	20
+	db	46
+	db	1
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	39
+	db	25
+	db	73
+	db	19
+	db	60
+	db	25
+	db	63
+	db	25
+	db	0
+	db	0
+	db	21
+	db	46
+	db	0
+	db	3
+	db	37
+	db	58
+	db	11
+	db	59
+	db	11
+	db	39
+	db	25
+	db	73
+	db	19
+	db	60
+	db	25
+	db	63
+	db	25
+	db	0
+	db	0
+	db	0
+	section	.debug_info,"",@progbits
+	private	cu_begin0
+cu_begin0:
+	dd	debug_info_end0-debug_info_start0
+	private	debug_info_start0
+debug_info_start0:
+	dw	5
+	db	1
+	db	3
+	dd	abbrev_start0
+	db	1
+	db	0
+	dw	12
+	db	1
+	dd	str_offsets_base0
+	dd	line_table_start0
+	db	2
+	db	9
+	dd	func_end0-func_begin0
+	dd	addr_table_base0
+	dd	loclists_table_base0
+	db	2
+	dd	49
+	db	1
+	db	15
+	db	2
+	db	161
+	db	0
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	13
+	db	0
+	db	5
+	db	3
+	db	6
+	db	1
+	db	6
+	db	4
+	db	8
+	db	7
+	db	2
+	dd	79
+	db	1
+	db	23
+	db	2
+	db	161
+	db	1
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	4
+	db	0
+	db	2
+	dd	101
+	db	1
+	db	28
+	db	2
+	db	161
+	db	2
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	28
+	db	0
+	db	2
+	dd	123
+	db	1
+	db	35
+	db	2
+	db	161
+	db	3
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	27
+	db	0
+	db	2
+	dd	79
+	db	1
+	db	41
+	db	2
+	db	161
+	db	4
+	db	2
+	dd	155
+	db	1
+	db	50
+	db	2
+	db	161
+	db	5
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	10
+	db	0
+	db	2
+	dd	177
+	db	1
+	db	51
+	db	2
+	db	161
+	db	6
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	15
+	db	0
+	db	2
+	dd	199
+	db	1
+	db	52
+	db	2
+	db	161
+	db	7
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	29
+	db	0
+	db	2
+	dd	221
+	db	1
+	db	54
+	db	2
+	db	161
+	db	8
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	21
+	db	0
+	db	7
+	dd	61
+	db	8
+	db	9
+	dd	func_end0-func_begin0
+	db	1
+	db	84
+
+	db	26
+	db	1
+	db	9
+
+	dd	473
+
+	db	9
+	db	2
+	db	145
+	db	51
+	db	27
+	db	1
+	db	18
+	dd	492
+	db	9
+	db	2
+	db	145
+	db	42
+	db	28
+	db	1
+	db	19
+	dd	492
+	db	9
+	db	2
+	db	145
+	db	32
+	db	29
+	db	1
+	db	20
+	dd	155
+	db	9
+	db	2
+	db	145
+	db	24
+	db	30
+	db	1
+	db	21
+	dd	698
+	db	9
+	db	2
+	db	145
+	db	15
+	db	31
+	db	1
+	db	24
+	dd	492
+	db	10
+	db	0
+	db	32
+	db	1
+	db	17
+	dd	473
+	db	10
+	db	1
+	db	33
+	db	1
+	db	31
+	dd	710
+	db	10
+	db	2
+	db	34
+	db	1
+	db	46
+	dd	473
+	db	10
+	db	3
+	db	35
+	db	1
+	db	48
+	dd	634
+	db	11
+	db	36
+	db	1
+	db	15
+	dd	233
+	db	12
+	dd	431
+	db	10
+	db	12
+	dd	435
+	db	11
+	db	12
+	dd	439
+	db	12
+	db	12
+	dd	443
+	db	13
+	db	12
+	dd	568
+	db	14
+	db	12
+	dd	612
+	db	15
+	db	12
+	dd	612
+	db	16
+	db	12
+	dd	638
+	db	17
+	db	12
+	dd	568
+	db	18
+	db	12
+	dd	612
+	db	19
+	db	12
+	dd	612
+	db	20
+	db	12
+	dd	660
+	db	21
+	db	12
+	dd	690
+	db	22
+	db	0
+	db	13
+	db	5
+	db	2
+	db	132
+
+
+
+	db	13
+	db	6
+	db	2
+	db	121
+
+
+
+	db	13
+	db	7
+	db	3
+	db	51
+
+
+
+	db	14
+	db	8
+	db	4
+	dw	383
+
+	dd	473
+
+
+	db	15
+	dd	477
+	db	15
+	dd	473
+	db	15
+	dd	473
+	db	15
+	dd	487
+	db	0
+	db	5
+	db	9
+	db	5
+	db	3
+	db	7
+	dd	482
+	db	16
+	dd	61
+	db	7
+	dd	492
+	db	17
+	dd	500
+	db	17
+	db	6
+	db	25
+	db	18
+	db	9
+	db	6
+	db	25
+	db	19
+	db	10
+	dd	532
+	db	6
+	db	25
+	db	0
+	db	19
+	db	13
+	dd	532
+	db	6
+	db	25
+	db	1
+	db	19
+	db	14
+	dd	544
+	db	6
+	db	25
+	db	2
+	db	0
+	db	17
+	dd	540
+	db	12
+	db	5
+	db	6
+	db	5
+	db	11
+	db	6
+	db	1
+	db	3
+	dd	556
+	db	4
+	dd	65
+	db	7
+	db	0
+	db	17
+	dd	564
+	db	16
+	db	5
+	db	11
+	db	5
+	db	15
+	db	8
+	db	1
+	db	20
+	db	18
+	db	6
+	db	229
+
+	dd	473
+
+
+	db	15
+	dd	233
+	db	15
+	dd	602
+	db	15
+	dd	532
+	db	15
+	dd	556
+	db	15
+	dd	532
+	db	0
+	db	7
+	dd	607
+	db	16
+	dd	492
+	db	20
+	db	19
+	db	2
+	db	98
+
+	dd	626
+
+
+	db	15
+	dd	477
+	db	0
+	db	17
+	dd	634
+	db	21
+	db	5
+	db	60
+	db	5
+	db	20
+	db	7
+	db	3
+	db	20
+	db	22
+	db	6
+	db	192
+
+	dd	492
+
+
+	db	15
+	dd	652
+	db	0
+	db	17
+	dd	473
+	db	23
+	db	5
+	db	55
+	db	14
+	db	24
+	db	4
+	dw	436
+
+	dd	473
+
+
+	db	15
+	dd	477
+	db	15
+	dd	473
+	db	15
+	dd	473
+	db	15
+	dd	602
+	db	0
+	db	21
+	db	25
+	db	7
+	db	55
+
+	dd	556
+
+
+	db	3
+	dd	61
+	db	4
+	dd	65
+	db	8
+	db	0
+	db	3
+	dd	473
+	db	4
+	dd	65
+	db	5
+	db	0
+	db	0
+	private	debug_info_end0
+debug_info_end0:
+	section	.debug_str_offsets,"",@progbits
+	dd	152
+	dw	5
+	dw	0
+	private	str_offsets_base0
+str_offsets_base0:
+	section	.debug_str,"MS",@progbits,1
+	private	info_string0
+info_string0:
+	db	"clang version 15.0.0 (https://github.com/jacobly0/llvm-project 6d9aa7a16db70f3d02ae304b08d4a03011281fef)", 0
+	private	info_string1
+info_string1:
+	db	"src\main.c", 0
+	private	info_string2
+info_string2:
+	db	"C:\CEdev\template\DEMO", 0
+	private	info_string3
+info_string3:
+	db	"char", 0
+	private	info_string4
+info_string4:
+	db	"__ARRAY_SIZE_TYPE__", 0
+	private	info_string5
+info_string5:
+	db	"os_ClrLCD", 0
+	private	info_string6
+info_string6:
+	db	"os_HomeUp", 0
+	private	info_string7
+info_string7:
+	db	"os_DrawStatusBar", 0
+	private	info_string8
+info_string8:
+	db	"os_GetMatrixElement", 0
+	private	info_string9
+info_string9:
+	db	"int", 0
+	private	info_string10
+info_string10:
+	db	"sign", 0
+	private	info_string11
+info_string11:
+	db	"signed char", 0
+	private	info_string12
+info_string12:
+	db	"int8_t", 0
+	private	info_string13
+info_string13:
+	db	"exp", 0
+	private	info_string14
+info_string14:
+	db	"mant", 0
+	private	info_string15
+info_string15:
+	db	"unsigned char", 0
+	private	info_string16
+info_string16:
+	db	"uint8_t", 0
+	private	info_string17
+info_string17:
+	db	"real_t", 0
+	private	info_string18
+info_string18:
+	db	"os_RealToStr", 0
+	private	info_string19
+info_string19:
+	db	"os_PutStrFull", 0
+	private	info_string20
+info_string20:
+	db	"unsigned int", 0
+	private	info_string21
+info_string21:
+	db	"uint24_t", 0
+	private	info_string22
+info_string22:
+	db	"os_Int24ToReal", 0
+	private	info_string23
+info_string23:
+	db	"int24_t", 0
+	private	info_string24
+info_string24:
+	db	"os_SetMatrixElement", 0
+	private	info_string25
+info_string25:
+	db	"os_GetCSC", 0
+	private	info_string26
+info_string26:
+	db	"main", 0
+	private	info_string27
+info_string27:
+	db	"matrix_value", 0
+	private	info_string28
+info_string28:
+	db	"integer_val", 0
+	private	info_string29
+info_string29:
+	db	"matrx_str", 0
+	private	info_string30
+info_string30:
+	db	"array_int_str", 0
+	private	info_string31
+info_string31:
+	db	"number_i_want_mtx", 0
+	private	info_string32
+info_string32:
+	db	"arr_b", 0
+	private	info_string33
+info_string33:
+	db	"test_array", 0
+	private	info_string34
+info_string34:
+	db	"var", 0
+	private	info_string35
+info_string35:
+	db	"code", 0
+	private	info_string36
+info_string36:
+	db	"matrix_name", 0
+	section	.debug_str_offsets,"",@progbits
+	dd	info_string0
+	dd	info_string1
+	dd	info_string2
+	dd	info_string3
+	dd	info_string4
+	dd	info_string5
+	dd	info_string6
+	dd	info_string7
+	dd	info_string8
+	dd	info_string9
+	dd	info_string10
+	dd	info_string11
+	dd	info_string12
+	dd	info_string13
+	dd	info_string14
+	dd	info_string15
+	dd	info_string16
+	dd	info_string17
+	dd	info_string18
+	dd	info_string19
+	dd	info_string20
+	dd	info_string21
+	dd	info_string22
+	dd	info_string23
+	dd	info_string24
+	dd	info_string25
+	dd	info_string26
+	dd	info_string27
+	dd	info_string28
+	dd	info_string29
+	dd	info_string30
+	dd	info_string31
+	dd	info_string32
+	dd	info_string33
+	dd	info_string34
+	dd	info_string35
+	dd	info_string36
+	section	.debug_addr,"",@progbits
+	dd	debug_addr_end0-debug_addr_start0
+	private	debug_addr_start0
+debug_addr_start0:
+	dw	5
+	db	3
+	db	0
+	private	addr_table_base0
+addr_table_base0:
+	dl	_.str
+	dl	_.str.1
+	dl	_.str.2
+	dl	_.str.3
+	dl	_.str.4
+	dl	_.str.5
+	dl	_.str.6
+	dl	_.str.7
+	dl	_.str.8
+	dl	func_begin0
+	dl	tmp2
+	dl	tmp3
+	dl	tmp4
+	dl	tmp5
+	dl	tmp6
+	dl	tmp7
+	dl	tmp8
+	dl	tmp10
+	dl	tmp11
+	dl	tmp12
+	dl	tmp13
+	dl	tmp14
+	dl	tmp16
+	private	debug_addr_end0
+debug_addr_end0:
+	ident	"clang version 15.0.0 (https://github.com/jacobly0/llvm-project 6d9aa7a16db70f3d02ae304b08d4a03011281fef)"
+	section	.debug_line,"",@progbits
+line_table_start0:
+	extern	__frameset
+	extern	_os_Int24ToReal
+	extern	__Unwind_SjLj_Register
+	extern	_os_PutStrFull
+	extern	_sprintf
+	extern	__Unwind_SjLj_Unregister
+	extern	_os_GetCSC
+	extern	_os_ClrLCD
+	extern	_os_GetMatrixElement
+	extern	_os_RealToStr
+	extern	_os_DrawStatusBar
+	extern	_os_SetMatrixElement
+	extern	_os_HomeUp
